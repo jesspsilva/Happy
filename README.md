@@ -50,11 +50,14 @@ yarn start
 ```
 After this process the `localhost: 3000` page will automatically open in your browser or acsess <a href="http://127.0.0.1:3000" target="_blank">http://127.0.0.1:3000</a>
 
+#### <b>Note</b>:
 To integrate the map on the application please update the .env.example with your token.
 You can acess <a href="https://account.mapbox.com/auth/signin/" target="_blank"><b>Mapbox</b></a> and create a free account.
 Then go to:
 - Access tokens (on you account page)
-- Copy the toke to the env file.
+- Copy the toke to the env file
+- Rename the file to '.env'
+- Start the project
 
 ### :two: Back-End - API server
 Install the backend dependencies:
