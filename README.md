@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img alt="Happy" width="280" title="#logo" src="./.github/happy.png" style="border-radius: 20px">
+    <img alt="Happy" title="mockup" src="./.github/mockup.png">
     <br>
 </h3>
 
@@ -32,12 +32,6 @@ The project was developed using the following technologies:
 - [HTML](https://html.com/)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JavaScript](https://www.javascript.com/)
-
-
-### Web Screenshot
-<div style="display: flex; flex-direction: 'row'; align-items: 'center';">
-    <img src="./.github/mockup.png" width="400px">
-</div>
 
 <a id="how-to-run"></a>
 
