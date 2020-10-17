@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img alt="Happy" width="280" title="#logo" src="./github_assets/logo.png">
+    <img alt="Happy" width="280" title="#logo" src="./github/happy.png" style="border-radius: 20px">
     <br>
 </h3>
 
@@ -36,8 +36,7 @@ The project was developed using the following technologies:
 
 ### Web Screenshot
 <div style="display: flex; flex-direction: 'row'; align-items: 'center';">
-       <img src="./github_assets/web1.png" width="400px">
-       <img src="./github_assets/web2.png" width="400px">
+    <img src="./github/mockup.png" width="400px">
 </div>
 
 <a id="how-to-run"></a>
@@ -56,6 +55,12 @@ yarn install
 yarn start
 ```
 After this process the `localhost: 3000` page will automatically open in your browser or acsess <a href="http://127.0.0.1:3000" target="_blank">http://127.0.0.1:3000</a>
+
+To integrate the map on the application please update the .env.example with your token.
+You can acess <a href="https://account.mapbox.com/auth/signin/" target="_blank"><b>Mapbox</b></a> and create a free account.
+Then go to:
+- Access tokens (on you account page)
+- Copy the toke to the env file.
 
 ### :two: Back-End - API server
 Install the backend dependencies:
