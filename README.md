@@ -40,18 +40,18 @@ The project was developed using the following technologies:
 ### :computer: Front-End - Web Application
 To start the **application** clone this repository:
 ```bash 
-$ git clone https://github.com/jesspsilva/Happy-Web
+$ git clone https://github.com/jesspsilva/Happy
 ```
 Then use the commands bellow:
 ```bash
-cd Happy-Web/web
+cd Happy/web
 yarn install
 yarn start
 ```
 After this process the `localhost: 3000` page will automatically open in your browser or acsess <a href="http://127.0.0.1:3000" target="_blank">http://127.0.0.1:3000</a>
 
 #### <b>Note</b>:
-To integrate the map on the application please update the .env.example with your token.
+To integrate the map on the application please update the <b>.env.example</b> with your token.
 You can acess <a href="https://account.mapbox.com/auth/signin/" target="_blank"><b>Mapbox</b></a> and create a <b>free</b> account.
 Then go to:
 - Access tokens (on you account page)
@@ -62,7 +62,7 @@ Then go to:
 ### :globe_with_meridians: Back-End - API server
 Install the backend dependencies:
 ```bash
-cd Happy-Web/backend
+cd Happy/backend
 yarn install
 yarn typeorm migration:run  // creating the tables on happy table
 yarn dev
@@ -74,11 +74,11 @@ You can see it on <a href="https://insomnia.rest/run/?label=Happy-API&uri=https%
 ### :iphone: Mobile
 Run the commands bellow:
 ```bash
-cd Happy-Web/mobile
+cd Happy/mobile
 yarn install
 yarn start
 ```
-After doing this, the metro bundler will open in your browser. From now on you have a few options to access the app.
+After doing this, the metro bundler will open in your browser. From now on <b>you have a few options to access the app</b>:
 
 #### 1. Android Emulator
 On the metro bundler page, click on <b>"Run on Android device / emulator"</b> and wait to load. Keep in mind that you must have gone through the android sdk installation process, etc.
@@ -93,7 +93,7 @@ After downloading, go back to the metro bundler page and scan the QR Code with t
 
 If everything went well, the app should be available now! :tada: :confetti_ball:
 
-#### Final Result
+### :fireworks: Final Result
 <img alt="HappyMobile" title="HappyMobile" src="./.github/mobile.gif">
 
 <a id="how-to-contribute"></a>
