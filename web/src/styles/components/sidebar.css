@@ -37,3 +37,8 @@ aside.app-sidebar footer a:hover,
 aside.app-sidebar footer button:hover {
 background: #17D6EB;
 }
+
+aside.app-sidebar footer a:focus,
+aside.app-sidebar footer button:focus {
+outline: 0;
+}

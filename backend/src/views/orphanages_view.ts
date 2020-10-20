@@ -13,6 +13,7 @@ export default {
             opening_hours: orphanage.opening_hours,
             open_on_weekend: orphanage.open_on_weekend,
             images: imagesView.renderMany(orphanage.images),
+            whatsapp_number: orphanage.whatsapp_number,
         };
     },
     renderMany(orphanages: Orphanage[]){

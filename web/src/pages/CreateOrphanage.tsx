@@ -23,6 +23,7 @@ const history = useHistory();
   const [open_on_weekend, setOpenOnWeekend] = useState(true);
   const [images, setImages] = useState<File[]>([]);
   const [previewImages, setPreviewImages] = useState<string[]>([]);
+  const [whatsapp_number, setWhatsappNumber] = useState('');
   const [errors, setErrors] = useState(false);
   
   function handleMapClick(event: LeafletMouseEvent){
@@ -59,20 +60,22 @@ const history = useHistory();
     data.append('instructions', instructions);
     data.append('opening_hours', opening_hours);
     data.append('open_on_weekend', String(open_on_weekend));
+    data.append('whatsapp_number', String(whatsapp_number));
+    
     images.forEach(image => {
       data.append('images', image);
     })
 
     await api.post('orphanages', data);
 
-    history.push('/app');
+    history.push('/successMessage');
 
   }
 
 
   function handleErrors(event: React.MouseEvent<HTMLButtonElement>){
     event.preventDefault();
-    if((name && about && instructions && opening_hours !== '') && (position.latitude && position.longitude !== 0)){
+    if((name && about && instructions && opening_hours && whatsapp_number !== '') && (position.latitude && position.longitude !== 0) && (images.length > 0)){
       setErrors(false);
       handleSubmit();
     } else {
@@ -114,7 +117,12 @@ const history = useHistory();
 
             <div className="input-block">
               <label htmlFor="about">Sobre <span>Máximo de 300 caracteres</span></label>
-              <textarea id="name" maxLength={300} value={about} onChange={ e => setAbout(e.target.value)}/>
+              <textarea id="about" maxLength={300} value={about} onChange={ e => setAbout(e.target.value)}/>
+            </div>
+
+            <div className="input-block">
+              <label htmlFor="name">Número de Whatsapp</label>
+              <input id="whatsapp_number" value={whatsapp_number} onChange={ e => setWhatsappNumber(e.target.value)} />
             </div>
 
             <div className="input-block">

@@ -20,6 +20,8 @@ export default class Orphanage {
     opening_hours: string;
     @Column()
     open_on_weekend: boolean;
+    @Column()
+    whatsapp_number: number;
 
     @OneToMany(() => Image, image => image.orphanage, {
         // atualizar as imagens relacionadas com o orfanato

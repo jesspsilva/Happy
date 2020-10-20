@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
-import { FiClock, FiInfo } from "react-icons/fi";
+import { FiClock, FiInfo} from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa"
 import { Map, Marker, TileLayer } from "react-leaflet";
 import { useParams } from 'react-router-dom';
 
@@ -19,6 +20,7 @@ interface Orphanage {
     instructions: string,
     opening_hours: string,
     open_on_weekend: string,
+    whatsapp_number: number,
     images: Array<{
       id: number;
       url: string;
@@ -27,6 +29,11 @@ interface Orphanage {
 
 interface OrphanageParams {
   id: string,
+}
+
+function openWhatsApp(whatsAppNumber: number){
+  let url = `https://web.whatsapp.com/send?phone=${whatsAppNumber}`;
+  window.open(url);
 }
 
 export default function Orphanage() {
@@ -121,6 +128,12 @@ export default function Orphanage() {
                 )
               };
             </div>
+            {orphanage.whatsapp_number != null && (
+                <button className="contact-button" onClick={() => openWhatsApp(orphanage.whatsapp_number)}>
+                    <FaWhatsapp name="whatsapp" size={24} color="#FFF" />
+                    Contactar
+                </button>
+              )}
           </div>
         </div>
       </main>

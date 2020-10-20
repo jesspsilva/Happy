@@ -1,0 +1,55 @@
+#OrphanageCreatedOk {
+    background: #37C77F;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#OrphanageCreatedOk .container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#OrphanageCreatedOk .text-container {
+    padding-right: 130px;
+    color: #fff;
+    text-align: center;
+}
+
+#OrphanageCreatedOk .text-container .title {
+    font-size: 80px;
+    line-height: 80px;
+    padding-bottom: 60px;
+    font-weight: 800;
+}
+
+#OrphanageCreatedOk .text-container .text {
+    font-size: 24px;
+    line-height: 44px;
+    margin-bottom: 60px;
+}
+
+#OrphanageCreatedOk .text-container .back-button {
+    background-color: #31B272;
+    color: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-decoration: none;
+    padding: 20px 44px;
+}
+
+#OrphanageCreatedOk .text-container .back-button:hover {
+    background-color: #3BD689;
+    color: #fff;
+}
