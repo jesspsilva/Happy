@@ -48,7 +48,7 @@ cd Happy/web
 yarn install
 yarn start
 ```
-After this process the `localhost: 3000` page will automatically open in your browser or acsess <a href="http://127.0.0.1:3000" target="_blank">http://127.0.0.1:3000</a>
+After this process the `localhost: 3000` page will automatically open in your browser or access <a href="http://127.0.0.1:3000" target="_blank">http://127.0.0.1:3000</a>
 
 #### <b>Note</b>:
 To integrate the map on the application please update the <b>.env.example</b> with your token.
